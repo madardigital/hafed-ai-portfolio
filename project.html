@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="دراسة حالة من معرض أعمال حافظ الشرعبي.">
+  <meta name="theme-color" content="#0b1020">
+  <title>دراسة حالة | حافظ الشرعبي</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="project-page">
+  <div class="ambient ambient-one"></div>
+  <div class="ambient ambient-two"></div>
+  <div class="page-noise"></div>
+
+  <header class="site-header scrolled">
+    <div class="container nav-wrap">
+      <a class="brand" href="index.html" aria-label="العودة إلى الصفحة الرئيسية">
+        <span class="brand-mark">ح</span>
+        <span class="brand-copy">
+          <strong>حافظ الشرعبي</strong>
+          <small>AI Content Creator</small>
+        </span>
+      </a>
+
+      <nav class="nav-links" aria-label="التنقل">
+        <a href="index.html#about">نبذة</a>
+        <a href="index.html#process">طريقة عملي</a>
+        <a href="index.html#work" class="active">الأعمال</a>
+        <a href="index.html#contact">تواصل</a>
+      </nav>
+
+      <button class="theme-toggle" type="button" aria-label="تبديل المظهر">
+        <span class="theme-icon">◐</span>
+      </button>
+    </div>
+  </header>
+
+  <main id="projectRoot">
+    <section class="project-hero">
+      <div class="container">
+        <a class="project-breadcrumb" href="index.html#work">→ العودة إلى الأعمال</a>
+        <div class="project-hero-grid">
+          <div class="project-hero-copy reveal">
+            <span class="section-kicker" id="projectKicker"></span>
+            <h1 id="projectTitle">جاري تحميل المشروع...</h1>
+            <p id="projectIntro"></p>
+            <div class="project-tags" id="projectTags"></div>
+            <div class="hero-actions" id="projectActions"></div>
+          </div>
+          <div class="project-hero-media reveal delay-1" id="projectHeroMedia"></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="case-section">
+      <div class="container case-grid">
+        <aside class="case-side reveal">
+          <span>خلف الكواليس</span>
+          <h2>كيف تحولت الفكرة إلى مخرج نهائي؟</h2>
+        </aside>
+        <div class="case-content" id="caseContent"></div>
+      </div>
+    </section>
+
+    <section class="preview-section" id="preview">
+      <div class="container">
+        <div class="preview-card reveal">
+          <div class="preview-header">
+            <div>
+              <span class="section-kicker">النموذج النهائي</span>
+              <h2 id="previewTitle">استعراض المشروع</h2>
+            </div>
+            <a class="btn btn-primary" id="previewButton" target="_blank" rel="noopener noreferrer">فتح النموذج في نافذة جديدة</a>
+          </div>
+          <div class="preview-frame" id="previewFrame"></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="next-projects">
+      <div class="container">
+        <div class="section-heading reveal">
+          <span class="section-kicker">أعمال أخرى</span>
+          <h2>استكمل تصفح دراسات الحالة</h2>
+        </div>
+        <div class="next-grid" id="nextProjects"></div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-wrap">
+      <div>
+        <strong>حافظ الشرعبي</strong>
+        <span>AI Content Creator · Visual Storytelling · Digital Media</span>
+      </div>
+      <a href="index.html">الصفحة الرئيسية</a>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
