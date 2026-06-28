@@ -1,0 +1,1 @@
+const lead=document.querySelector('#contact .contact-card>div:first-child');if(lead)lead.innerHTML='<p class="eyebrow">التواصل</p><h2>حافظ الشرفي</h2><p>AI Visual Content Creator</p>';
