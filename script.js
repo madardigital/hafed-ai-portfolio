@@ -1,1 +1,1 @@
-import('./site-init.js?v=4').then(()=>import('./content-main.js?v=4')).then(()=>import('./projects-base.js?v=4')).then(()=>import('./project-autism.js?v=4')).then(()=>import('./project-blackberry.js?v=4')).then(()=>import('./project-vat.js?v=4')).then(()=>import('./project-brand.js?v=4')).then(()=>import('./contact-heading.js?v=4')).then(()=>import('./final-links.js?v=4'));
+/* Static portfolio: all content is rendered directly in index.html. */
