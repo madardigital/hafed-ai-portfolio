@@ -4,238 +4,225 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="معرض أعمال حافظ الشرفي في صناعة المحتوى البصري باستخدام أدوات الذكاء الاصطناعي.">
-  <meta name="theme-color" content="#0d1512">
+  <meta name="theme-color" content="#0d1713">
   <title>حافظ الشرفي | AI Visual Content Creator</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@400;500;600;700&family=Noto+Kufi+Arabic:wght@500;600;700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css">
-  <style>.reveal{opacity:1!important;transform:none!important}</style>
+  <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css?v=6">
 </head>
 <body>
   <a class="skip-link" href="#main">الانتقال إلى المحتوى</a>
 
   <header class="site-header" id="top">
     <div class="container nav-shell">
-      <a class="identity" href="#top" aria-label="العودة إلى أعلى الصفحة">
-        <span class="identity-mark">ح</span>
-        <span><strong>حافظ الشرفي</strong><small>AI Visual Content Creator</small></span>
+      <a class="brand" href="#top" aria-label="العودة إلى أعلى الصفحة">
+        <span class="brand-mark" aria-hidden="true">ح</span>
+        <span class="brand-copy"><strong>حافظ الشرفي</strong><small lang="en" dir="ltr">AI Visual Content Creator</small></span>
       </a>
-      <button class="menu-button" type="button" aria-label="فتح القائمة" aria-expanded="false"><span></span><span></span><span></span></button>
-      <nav class="main-nav" aria-label="التنقل الرئيسي">
-        <a href="#about">نبذة</a>
-        <a href="#workflow">طريقة العمل</a>
-        <a href="#projects">المشاريع</a>
-        <a href="#gallery">مختارات</a>
+      <button class="menu-button" type="button" aria-label="فتح قائمة التنقل" aria-expanded="false" aria-controls="main-nav">
+        <span></span><span></span><span></span>
+      </button>
+      <nav class="main-nav" id="main-nav" aria-label="التنقل الرئيسي">
+        <a href="#about">من أنا؟</a>
+        <a href="#services">ما الذي أقدّمه؟</a>
+        <a href="#workflow">كيف أعمل؟</a>
+        <a href="#projects">نماذج الأعمال</a>
         <a href="#contact">التواصل</a>
       </nav>
     </div>
   </header>
 
   <main id="main">
-    <section class="hero">
-      <div class="container hero-grid">
-        <div class="hero-copy reveal">
-          <p class="overline">صناعة المحتوى البصري باستخدام أدوات الذكاء الاصطناعي</p>
-          <h1>أحوّل الأفكار والموجزات إلى <span>محتوى بصري متكامل</span> وجاهز للنشر.</h1>
-          <p class="hero-summary">صانع محتوى رقمي ومتخصص في العلاقات العامة والإعلان. أستخدم الذكاء الاصطناعي لتطوير الفكرة، وكتابة الـPrompts، وتوليد الصور والفيديو، ثم مراجعة النتائج وتصميمها ومونتاجها حتى تصل إلى مخرج واضح، جذاب، ومناسب للجمهور والمنصة.</p>
-          <div class="hero-actions">
-            <a class="button button-primary" href="#projects">استعراض الأعمال المختارة</a>
-            <a class="button button-secondary" href="https://wa.me/967777243690" target="_blank" rel="noopener noreferrer">تواصل عبر واتساب</a>
-          </div>
-          <div class="hero-facts">
-            <span><b>منذ 2022</b> أستخدم أدوات الذكاء الاصطناعي</span>
-            <span><b>الفكرة أولًا</b> ثم اختيار الأداة الأنسب</span>
-            <span><b>مراجعة دقيقة</b> قبل التسليم والنشر</span>
-          </div>
-        </div>
-        <div class="hero-showcase reveal delay-1">
-          <figure class="showcase-main"><img src="https://drive.google.com/thumbnail?id=1M74d0rt2k121cXFTHF6VuSVaA6Xamfs4&sz=w1600" alt="تصميم إعلاني لتطبيق StudyNest"></figure>
-          <figure class="showcase-small top"><img src="https://drive.google.com/thumbnail?id=1UPvW3n3OOW_BU-iZTOVMfsiV7ubCCQNi&sz=w1200" alt="مشهد بصري عن تأثير الإعلان على الطفل"></figure>
-          <figure class="showcase-small bottom"><img src="https://drive.google.com/thumbnail?id=1C7b1mjUxUngcoprVhmu5Q5Rt-HiMXmUk&sz=w1200" alt="تصور إعلاني لهاتف BlackBerry Secure X1"></figure>
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="container hero-inner">
+        <p class="hero-kicker">صناعة المحتوى البصري باستخدام أدوات الذكاء الاصطناعي</p>
+        <h1 id="hero-title">من الفكرة والموجز إلى محتوى بصري متكامل وجاهز للنشر.</h1>
+        <p class="hero-role"><strong>حافظ الشرفي</strong><span lang="en" dir="ltr">AI Visual Content Creator</span></p>
+        <div class="hero-actions">
+          <a class="button button-primary" href="#projects">استعراض نماذج الأعمال</a>
+          <a class="button button-ghost" href="#contact">التواصل</a>
         </div>
       </div>
     </section>
 
-    <section class="statement" id="about">
-      <div class="container statement-grid">
-        <div class="section-label reveal"><span>01</span><p>نبذة مهنية</p></div>
-        <div class="statement-copy reveal delay-1">
-          <h2>أستخدم الذكاء الاصطناعي كجزء من عملية إبداعية كاملة، وليس كخطوة منفصلة.</h2>
+    <section class="section section-light" id="about">
+      <div class="container readable">
+        <header class="section-heading">
+          <p class="section-number">01</p>
+          <h2>من أنا؟</h2>
+        </header>
+        <div class="about-copy">
           <p>صانع محتوى رقمي ومتخصص في العلاقات العامة والإعلان، أوظف أدوات الذكاء الاصطناعي لتحويل الأفكار والموجزات إلى فيديوهات إعلانية وتوعوية، وموشن جرافيك، وحملات متكاملة، وإنفوجرافيك، وتجارب رقمية تفاعلية.</p>
-          <p>أستخدم الذكاء الاصطناعي منذ عام 2022، وأحرص باستمرار على متابعة كل جديد في هذا المجال وتجربة الأدوات والنماذج المختلفة، ثم اختيار الأنسب منها بحسب احتياج كل مشروع. استخدمت عددًا من الأدوات، من أبرزها <strong>ChatGPT Plus، Gemini Pro، Claude، GLM، وVeo 3</strong>، إلى جانب أدوات أخرى تساعدني في البحث، وتطوير الأفكار، وكتابة المحتوى، وتوليد الصور والفيديو، وتحسين المخرجات.</p>
-          <blockquote>لا أرتبط بأداة واحدة؛ بل أستخدم ما يخدم الفكرة ويساعدني على الوصول إلى أفضل نتيجة ممكنة.</blockquote>
+          <p>أستخدم الذكاء الاصطناعي منذ عام 2022، وأحرص باستمرار على متابعة كل جديد في هذا المجال وتجربة الأدوات والنماذج المختلفة، ثم اختيار الأنسب منها بحسب احتياج كل مشروع. استخدمت عددًا من الأدوات، من أبرزها <span lang="en" dir="ltr">ChatGPT Plus</span>، و<span lang="en" dir="ltr">Gemini Pro</span>، و<span lang="en" dir="ltr">Claude</span>، و<span lang="en" dir="ltr">GLM</span>، و<span lang="en" dir="ltr">Veo 3</span>، إلى جانب أدوات أخرى تساعدني في البحث، وتطوير الأفكار، وكتابة المحتوى، وتوليد الصور والفيديو، وتحسين المخرجات.</p>
+          <p>أجمع في عملي بين البحث والتخطيط الاتصالي، وكتابة المحتوى، وتطوير الأفكار الإبداعية، وتوليد العناصر البصرية، والتصميم. ولا أرتبط بأداة واحدة؛ بل أستخدم ما يخدم الفكرة ويساعدني على الوصول إلى أفضل نتيجة ممكنة.</p>
         </div>
       </div>
     </section>
 
-    <section class="capabilities">
+    <section class="section section-dark" id="services">
       <div class="container">
-        <div class="section-heading reveal">
-          <p class="eyebrow">ما الذي أقدمه؟</p>
-          <h2>من الموجز إلى نتيجة بصرية قابلة للاستخدام</h2>
-        </div>
-        <div class="capability-grid">
-          <article class="capability reveal"><span>01</span><h3>تطوير الفكرة البصرية</h3><p>تحويل الهدف والجمهور والرسالة إلى مفهوم بصري واضح قبل بدء التوليد أو التصميم.</p></article>
-          <article class="capability reveal delay-1"><span>02</span><h3>كتابة وتطوير الـPrompts</h3><p>تحديد المشهد والتكوين والإضاءة والأسلوب ونسبة التصميم، ثم تحسين الأوامر بناءً على النتائج.</p></article>
-          <article class="capability reveal delay-2"><span>03</span><h3>توليد الصور والفيديو</h3><p>اختيار الأدوات المناسبة وإنتاج بدائل متعددة ثم انتقاء المخرجات الأقرب إلى الهدف.</p></article>
-          <article class="capability reveal delay-3"><span>04</span><h3>التصميم والمونتاج</h3><p>دمج العناصر المولدة مع النصوص والهوية والصوت والحركة داخل مخرج متماسك.</p></article>
-          <article class="capability reveal delay-4"><span>05</span><h3>المراجعة وضبط الجودة</h3><p>مراجعة التشوهات والنصوص والتناسق والنسب والتفاصيل قبل التسليم أو النشر.</p></article>
-        </div>
-      </div>
-    </section>
-
-    <section class="workflow" id="workflow">
-      <div class="container workflow-grid">
-        <div class="section-label reveal"><span>02</span><p>طريقة العمل</p></div>
-        <div class="workflow-content reveal delay-1">
-          <h2>لا يبدأ العمل من الأداة؛ بل من السؤال الذي يجب أن يجيب عنه المحتوى.</h2>
-          <p>أبدأ بفهم المطلوب والهدف والجمهور والمنصة، ثم أطور الفكرة والرسائل والسيناريو. بعد ذلك أحدد ما يحتاج إلى بحث أو كتابة أو توليد، وأختار الأداة الأنسب لكل مرحلة. لا أكتفي بأول نتيجة؛ بل أقارن وأعدل وأعيد التوليد، ثم أجمع العناصر داخل التصميم أو الفيديو، وأراجع التفاصيل قبل التسليم.</p>
-          <div class="workflow-line" aria-label="مراحل العمل">
-            <span>Brief</span><i></i><span>Concept</span><i></i><span>Prompt</span><i></i><span>Generate</span><i></i><span>Refine</span><i></i><span>Design</span><i></i><span>Review</span>
-          </div>
-          <div class="prompt-notes">
-            <div><b>قبل التوليد</b><p>الهدف، الجمهور، الأسلوب، زاوية الكاميرا، الإضاءة، المساحة المطلوبة للنص، والمنصة.</p></div>
-            <div><b>بعد التوليد</b><p>التناسق، التشوهات، دقة الفكرة، صلاحية الاستخدام، ثم التعديل والدمج والمراجعة النهائية.</p></div>
-          </div>
+        <header class="section-heading heading-on-dark">
+          <p class="section-number">02</p>
+          <h2>ما الذي أقدّمه؟</h2>
+          <p>خدمات مترابطة تبدأ من فهم الفكرة وتنتهي بمخرج بصري جاهز للاستخدام.</p>
+        </header>
+        <div class="services-grid">
+          <article class="service-card"><span>01</span><h3>تطوير الأفكار البصرية</h3><p>أحوّل الموجز والهدف والجمهور إلى فكرة قابلة للتنفيذ في صورة أو فيديو أو حملة متكاملة.</p></article>
+          <article class="service-card"><span>02</span><h3>كتابة المحتوى والسيناريو</h3><p>أصيغ الرسائل والنصوص والسيناريوهات، وأحدد تسلسل المشاهد بما يناسب الجمهور والمنصة والمدة المطلوبة.</p></article>
+          <article class="service-card"><span>03</span><h3>كتابة وتطوير الـPrompts</h3><p>أكتب الـPrompts وفق التكوين والأسلوب والإضاءة وزاوية التصوير والتفاصيل المطلوبة، ثم أعدّلها بناءً على النتائج.</p></article>
+          <article class="service-card"><span>04</span><h3>توليد الصور والمشاهد</h3><p>أستخدم أدوات الذكاء الاصطناعي لتوليد الصور والمشاهد، بما في ذلك المشاهد المصحوبة بالفويس أوفر، مع مراجعة الاتساق والتفاصيل.</p></article>
+          <article class="service-card"><span>05</span><h3>التصميم والموشن والمونتاج</h3><p>أحوّل العناصر المولدة إلى تصميم أو فيديو متكامل، وأولّد الشرائح البصرية وأحركها بالمؤثرات والانتقالات المناسبة.</p></article>
+          <article class="service-card"><span>06</span><h3>الحملات والمحتوى المتعدد</h3><p>أطوّر الحملات التوعوية والإعلانية، والإنفوجرافيك، والمحتوى المرئي المهيأ للنشر عبر منصات متعددة.</p></article>
+          <article class="service-card service-card-wide"><span>07</span><h3>المراجعة وتحسين المخرجات</h3><p>أراجع النصوص والتشوهات والتناسق والصوت والحركة والأبعاد، وأعالج الملاحظات قبل اعتماد النسخة النهائية.</p></article>
         </div>
       </div>
     </section>
 
-    <section class="projects" id="projects">
+    <section class="section section-light" id="workflow">
+      <div class="container readable">
+        <header class="section-heading">
+          <p class="section-number">03</p>
+          <h2>كيف أعمل؟</h2>
+        </header>
+        <div class="workflow-copy">
+          <p>أبدأ بفهم الموجز والهدف والجمهور والمنصة التي سيُنشر عليها المحتوى. أبحث في الموضوع، وأطوّر الفكرة والرسالة، ثم أكتب المحتوى أو السيناريو وأحدد المشاهد والعناصر المطلوبة.</p>
+          <p>أصيغ الـPrompts وأختار الأداة المناسبة لكل مرحلة، ثم أنتج أكثر من نتيجة وأقارن بينها. لا أعتمد على أول مخرج؛ بل أعدّل الأوامر وأعيد التوليد حتى أصل إلى نتيجة تخدم الفكرة وتناسب الاستخدام المطلوب.</p>
+          <p>بعد اختيار الصور أو المشاهد أو الشرائح المناسبة، أدمجها مع النصوص والفويس أوفر والهوية البصرية، ثم أنفذ التصميم أو التحريك أو المونتاج. وفي المرحلة الأخيرة أراجع العمل كاملًا، وأعالج الأخطاء والتفاصيل، وأجهز النسخة النهائية للنشر أو التسليم.</p>
+        </div>
+        <div class="workflow-steps" aria-label="مراحل العمل">
+          <span>فهم الموجز</span><i>←</i><span>تطوير الفكرة</span><i>←</i><span>كتابة المحتوى والـPrompts</span><i>←</i><span>توليد العناصر البصرية</span><i>←</i><span>التصميم والمونتاج</span><i>←</i><span>المراجعة والإخراج النهائي</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="section projects-section" id="projects">
       <div class="container">
-        <div class="section-heading reveal">
-          <p class="eyebrow">الأعمال المختارة</p>
-          <h2>مشاريع تثبت الفكرة، والـPrompt، والتنفيذ، والمراجعة</h2>
-          <p>جميع المشاريع معروضة في هذه الصفحة لتسهيل مراجعتها، بينما يفتح النموذج الكامل في تبويب جديد عند الحاجة.</p>
-        </div>
+        <header class="section-heading projects-heading">
+          <p class="section-number">04</p>
+          <h2>بعض نماذج أعمالي باستخدام الذكاء الاصطناعي</h2>
+          <p>استخدمت أدوات الذكاء الاصطناعي بطرق مختلفة بحسب طبيعة كل مشروع، بدءًا من البحث وكتابة المحتوى والـPrompts، وصولًا إلى توليد الصور والمشاهد والشرائح، ثم التصميم والتحريك والمونتاج والمراجعة النهائية.</p>
+        </header>
 
-        <article class="case-study reveal">
-          <div class="case-visual video-poster"><img src="https://drive.google.com/thumbnail?id=1jwu_MaFHXq97Y-_yqQWNReQKb9suMdd-&sz=w1600" alt="غلاف الفيديو التوعوي عن اضطراب طيف التوحد"><span>01</span></div>
-          <div class="case-copy">
-            <p class="case-type">فيديو توعوي · سرد بصري بالذكاء الاصطناعي</p>
+        <article class="project-row">
+          <div class="project-media"><img src="https://drive.google.com/thumbnail?id=1Pjb0iG3_ExG9ny39DaEB9ubFu6Vj7WqZ&sz=w1600" alt="لقطة من الفيديو التوعوي عن اضطراب طيف التوحد" loading="lazy"></div>
+          <div class="project-copy">
+            <p class="project-type">فيديو توعوي · سرد بصري</p>
             <h3>فيديو توعوي عن اضطراب طيف التوحد</h3>
-            <p class="case-intro">مشروع يحول موضوعًا إنسانيًا وحساسًا إلى قصة بصرية واضحة، تبدأ من مواقف يومية يمكن ملاحظتها، ثم تنتقل إلى الفهم والتشخيص والتدخل، وتنتهي برسالة مباشرة: الكشف المبكر يصنع فرقًا.</p>
-            <div class="case-text"><p><b>الفكرة والتنفيذ:</b> تم تنظيم المعلومات داخل تسلسل قصصي بدل تقديمها كقائمة منفصلة. جرى تحديد المشاهد المطلوبة، وتوليد عناصر بصرية قريبة من البيئة المحلية، ثم اختيار النتائج الأكثر اتساقًا ودمجها مع النص والصوت والانتقالات.</p><p><b>دوري:</b> تطوير الفكرة والرسالة، تنظيم السيناريو، تحديد تسلسل المشاهد، كتابة النصوص الظاهرة، اختيار العناصر البصرية، والمونتاج والإخراج النهائي.</p></div>
-            <a class="project-link" href="https://drive.google.com/file/d/1jwu_MaFHXq97Y-_yqQWNReQKb9suMdd-/view?usp=drivesdk" target="_blank" rel="noopener noreferrer">مشاهدة الفيديو التوعوي <span>↗</span></a>
+            <p>أنجزت فيديو توعويًا يشرح بعض العلامات المبكرة لاضطراب طيف التوحد وأهمية التشخيص والتدخل المبكر.</p>
+            <p>نظمت الفكرة، وكتبت السيناريو، وقسمته إلى مشاهد مترابطة، ثم استخدمت أدوات الذكاء الاصطناعي في تطوير الـPrompts وتوليد المشاهد مصحوبة بالفويس أوفر.</p>
+            <p>راجعت العلاقة بين الصورة والصوت وتسلسل المشاهد، واخترت النتائج الأكثر اتساقًا مع الرسالة، ثم أضفت النصوص والانتقالات ونفذت المونتاج والإخراج النهائي.</p>
+            <a class="project-link" href="https://drive.google.com/file/d/1Pjb0iG3_ExG9ny39DaEB9ubFu6Vj7WqZ/view?usp=drivesdk" target="_blank" rel="noopener noreferrer">مشاهدة الفيديو التوعوي <span>↗</span></a>
           </div>
         </article>
 
-        <article class="case-study reverse reveal">
-          <div class="case-visual"><img src="https://drive.google.com/thumbnail?id=1Y5FXBL4LJeMsz0hvo6yCP446JQtj6Gy2iTYVWLaTfBo&sz=w1600" alt="تصور حملة حج صحي"><span>02</span></div>
-          <div class="case-copy">
-            <p class="case-type">حملة بصرية متكاملة · اتصال صحي</p>
-            <h3>حج صحي</h3>
-            <p class="case-intro">تصور لحملة توعوية صحية متعددة المخرجات، هدفها تقديم رسائل الوقاية للحجاج بطريقة مباشرة، سهلة التذكر، وقابلة للاستخدام قبل السفر وأثناء أداء المناسك.</p>
-            <div class="case-text"><p><b>الفكرة والتنفيذ:</b> بدأ المشروع بتحليل المخاطر والجمهور، ثم صياغة أهداف ورسائل مرتبطة بالترطيب، والإجهاد الحراري، والوقاية من العدوى، والاستعداد الصحي. بعد ذلك جرى تطوير هوية بصرية موحدة وتصور مواد رقمية وميدانية وخطة لقياس الوصول والفهم.</p><p><b>دوري:</b> البحث وتحليل الموضوع والجمهور، تطوير الفكرة والرسائل، كتابة المحتوى، بناء الهوية البصرية، تنظيم المخرجات، وتصميم التقرير والعرض النهائي.</p></div>
-            <a class="project-link" href="https://docs.google.com/document/d/1Y5FXBL4LJeMsz0hvo6yCP446JQtj6Gy2iTYVWLaTfBo/view" target="_blank" rel="noopener noreferrer">استعراض الحملة كاملة <span>↗</span></a>
+        <article class="project-row reverse">
+          <div class="project-media"><img src="https://drive.google.com/thumbnail?id=1g0vZmepLw4Zis_gEIYdlHH5u77npee6Q&sz=w1600" alt="لقطة من إعلان نخيلنا تمرة تجمعنا" loading="lazy"></div>
+          <div class="project-copy">
+            <p class="project-type">إعلان وهوية · سرد ثقافي</p>
+            <h3>نخيلنا — تمرة تجمعنا</h3>
+            <p>صغت فكرة إعلان لعلامة تمور سعودية تربط المنتج بالضيافة واللقاء والهوية المحلية.</p>
+            <p>كتبت فكرة العلامة وشعارها ورسالتها، ثم نظمت السيناريو وحددت المشاهد المطلوبة للإعلان.</p>
+            <p>استخدمت أدوات الذكاء الاصطناعي في تطوير الـPrompts وتوليد المشاهد مصحوبة بالفويس أوفر، ثم راجعت اتساق الشخصيات والبيئة والصوت مع الفكرة الإعلانية.</p>
+            <p>رتبت المشاهد المختارة، وأضفت النصوص والانتقالات، ونفذت المونتاج والإخراج النهائي للفيديو.</p>
+            <a class="project-link" href="https://drive.google.com/file/d/1g0vZmepLw4Zis_gEIYdlHH5u77npee6Q/view?usp=drivesdk" target="_blank" rel="noopener noreferrer">مشاهدة الإعلان <span>↗</span></a>
           </div>
         </article>
 
-        <article class="case-study reveal">
-          <div class="case-visual"><img src="https://drive.google.com/thumbnail?id=1M74d0rt2k121cXFTHF6VuSVaA6Xamfs4&sz=w1600" alt="تصميم StudyNest App"><span>03</span></div>
-          <div class="case-copy">
-            <p class="case-type">تصور منتج رقمي · إعلان بصري</p>
-            <h3>StudyNest App</h3>
-            <p class="case-intro">تصور بصري لتطبيق يسهّل حجز مساحات الدراسة المركزة، ويعرض رحلة المستخدم من اختيار المساحة إلى تحديد الموعد ثم تأكيد الحجز.</p>
-            <div class="case-text"><p><b>الفكرة والتنفيذ:</b> تم بناء الإعلان حول وعد واضح: حجز سريع وبسيط. جرى تطوير واجهات التطبيق، وتنظيم خطوات الاستخدام، ثم دمج الهواتف والفوائد الرئيسية داخل تصميم يشرح المنتج من أول نظرة.</p><p><b>القيمة التي يوضحها:</b> القدرة على تحويل فكرة خدمة إلى واجهة وتجربة استخدام ورسالة تسويقية متماسكة، مع مراعاة التسلسل البصري ووضوح المعلومات.</p></div>
-            <a class="project-link" href="https://drive.google.com/file/d/1z5YPSDOxDLJRjldoxg2fItX8Wx_OREvZ/view" target="_blank" rel="noopener noreferrer">استعراض تقرير المشروع <span>↗</span></a>
+        <article class="project-row">
+          <div class="project-media contain"><img src="https://drive.google.com/thumbnail?id=1vQrPM-ox4eomM5IX-AtBNWgXwHMgoIfv&sz=w1600" alt="صفحة من خطة حملة حج صحي" loading="lazy"></div>
+          <div class="project-copy">
+            <p class="project-type">حملة توعوية · اتصال صحي</p>
+            <h3>حملة حج صحي</h3>
+            <p>أعددت تصورًا متكاملًا لحملة توعوية تهدف إلى رفع وعي الحجاج بالمخاطر الصحية المرتبطة بالحج، ومنها الإجهاد الحراري، والأمراض التنفسية، ومضاعفات الأمراض المزمنة.</p>
+            <p>وظفت أدوات الذكاء الاصطناعي في تنظيم البحث والمعلومات، وتحليل الجمهور، وصياغة الأهداف والرسائل، واقتراح الاتجاهات البصرية والمحتوى المناسب لمراحل رحلة الحاج.</p>
+            <p>صممت هوية الحملة ومخرجاتها، وأعددت الخطة والعرض والتقرير المفصل بصورة منظمة وقابلة للاستخدام عبر القنوات الرقمية والميدانية.</p>
+            <div class="project-actions">
+              <a class="project-link" href="https://drive.google.com/file/d/1vQrPM-ox4eomM5IX-AtBNWgXwHMgoIfv/view?usp=drivesdk" target="_blank" rel="noopener noreferrer">استعراض خطة الحملة <span>↗</span></a>
+              <a class="project-link secondary-link" href="hajj-report.html">تصفح التقرير داخل الموقع <span>←</span></a>
+            </div>
           </div>
         </article>
 
-        <article class="case-study reverse reveal">
-          <div class="case-visual"><img src="https://drive.google.com/thumbnail?id=1UPvW3n3OOW_BU-iZTOVMfsiV7ubCCQNi&sz=w1600" alt="مشهد طفل أمام إعلان وجبات سريعة"><span>04</span></div>
-          <div class="case-copy">
-            <p class="case-type">محتوى مفاهيمي · قصة بصرية</p>
-            <h3>من يصنع اختيار الطفل؟</h3>
-            <p class="case-intro">تحويل موضوع اجتماعي ومعلوماتي حول تأثير البيئة والإعلانات في اختيارات الطفل الغذائية إلى مشهد يفهمه المشاهد فورًا، من دون شرح طويل.</p>
-            <div class="case-text"><p><b>الفكرة والتنفيذ:</b> بُني المشهد على لحظة قرار: طفل يغادر المدرسة بينما يواجه إعلانًا غذائيًا لافتًا. استُخدمت زاوية الظهر واتجاه النظر والإضاءة لتوجيه الانتباه نحو الصراع بين البيئة التعليمية والتأثير التجاري.</p><p><b>الاستخدام:</b> يصلح المشهد كصورة افتتاحية لتقرير أو حملة توعوية أو إنفوجرافيك، ويثبت القدرة على تحويل فكرة مجردة إلى سرد بصري واضح.</p></div>
-            <a class="project-link" href="https://drive.google.com/file/d/1UPvW3n3OOW_BU-iZTOVMfsiV7ubCCQNi/view?usp=drivesdk" target="_blank" rel="noopener noreferrer">فتح العمل البصري <span>↗</span></a>
-          </div>
-        </article>
-
-        <article class="case-study reveal">
-          <div class="case-visual portrait"><img src="https://drive.google.com/thumbnail?id=1C7b1mjUxUngcoprVhmu5Q5Rt-HiMXmUk&sz=w1400" alt="إعلان تصوري BlackBerry Secure X1"><span>05</span></div>
-          <div class="case-copy">
-            <p class="case-type">تصور إعلاني · منتج تقني</p>
-            <h3>BlackBerry Secure X1</h3>
-            <p class="case-intro">تصور إعلاني غير رسمي لهاتف تقني، مبني على فكرة عودة الثقة والأمان في شكل حديث يواكب المستقبل.</p>
-            <div class="case-text"><p><b>الفكرة والتنفيذ:</b> تم تطوير صورة Hero للمنتج داخل بيئة بصرية مرتبطة بالأمان الرقمي، ثم بناء التكوين حول الهاتف والدرع والضوء، مع عنوان إعلاني وعبارة تحفّز على اكتشاف المنتج.</p><p><b>ما يوضحه المشروع:</b> ابتكار تصور لمنتج، وكتابة الرسالة، وتوجيه التوليد البصري، ثم تحويل النتيجة إلى إعلان عمودي مناسب للمنصات الرقمية.</p></div>
-            <a class="project-link" href="https://drive.google.com/file/d/1C7b1mjUxUngcoprVhmu5Q5Rt-HiMXmUk/view?usp=drivesdk" target="_blank" rel="noopener noreferrer">فتح التصميم الكامل <span>↗</span></a>
-          </div>
-        </article>
-
-        <article class="case-study reverse reveal">
-          <div class="case-visual video-poster"><img src="https://drive.google.com/thumbnail?id=15FfACqcyg_f6yWgrHYfeAtJ3-pGP0a0F&sz=w1600" alt="موشن جرافيك ضريبة القيمة المضافة"><span>06</span></div>
-          <div class="case-copy">
-            <p class="case-type">موشن جرافيك · تبسيط المعلومات</p>
-            <h3>ضريبة القيمة المضافة ببساطة</h3>
-            <p class="case-intro">فيديو موشن جرافيك يحول موضوعًا ماليًا قد يبدو جافًا إلى شرح مرئي قصير، يبدأ بالتعريف والهدف ثم ينتقل إلى النسبة وطريقة الحساب باستخدام مثال واضح.</p>
-            <div class="case-text"><p><b>الفكرة والتنفيذ:</b> تم تقسيم المحتوى إلى وحدات قصيرة، وترتيبه من العام إلى التطبيقي، ثم استخدام النص والحركة والأيقونات لتسهيل الفهم وتقليل الازدحام.</p><p><b>دوري:</b> تبسيط وترتيب المحتوى، كتابة النصوص المختصرة، بناء التسلسل التعليمي، تصميم المشاهد، إضافة الحركة، والمونتاج والإخراج النهائي.</p></div>
+        <article class="project-row reverse">
+          <div class="project-media"><img src="https://drive.google.com/thumbnail?id=15FfACqcyg_f6yWgrHYfeAtJ3-pGP0a0F&sz=w1600" alt="لقطة من موشن جرافيك ضريبة القيمة المضافة" loading="lazy"></div>
+          <div class="project-copy">
+            <p class="project-type">موشن جرافيك · تبسيط المعلومات</p>
+            <h3>موشن جرافيك ضريبة القيمة المضافة</h3>
+            <p>صممت فيديو موشن جرافيك يشرح ضريبة القيمة المضافة بطريقة مختصرة وسهلة، بداية من التعريف الأساسي وحتى النسبة وطريقة الحساب.</p>
+            <p>بسّطت المعلومات ونظمتها في تسلسل تعليمي، ثم استخدمت أدوات الذكاء الاصطناعي في صياغة المحتوى وتوليد الشرائح البصرية المناسبة لكل جزء.</p>
+            <p>بعد اختيار الشرائح وتوحيد أسلوبها، حركتها وأضفت إليها التأثيرات والانتقالات المناسبة، ثم نفذت المونتاج والإخراج النهائي.</p>
             <a class="project-link" href="https://drive.google.com/file/d/15FfACqcyg_f6yWgrHYfeAtJ3-pGP0a0F/view?usp=drivesdk" target="_blank" rel="noopener noreferrer">مشاهدة الموشن جرافيك <span>↗</span></a>
           </div>
         </article>
 
-        <article class="case-study reveal">
-          <div class="case-visual"><img src="https://drive.google.com/thumbnail?id=1fXnhR14d3uBoqONeb1RyLsGEGKnZAS63&sz=w1600" alt="مشروع نخيلنا تمرة تجمعنا"><span>07</span></div>
-          <div class="case-copy">
-            <p class="case-type">إعلان وهوية · سرد ثقافي</p>
-            <h3>نخيلنا — تمرة تجمعنا</h3>
-            <p class="case-intro">فكرة إعلانية لعلامة تمور سعودية تقدم التمر بوصفه جزءًا من الضيافة واللمة، وليس مجرد منتج غذائي.</p>
-            <div class="case-text"><p><b>الفكرة والتنفيذ:</b> بُني الإعلان على مشاهد دافئة تبدأ من تفاصيل المنتج، ثم تنتقل إلى التقديم والمشاركة، وتنتهي بصورة العبوة والشعار. استُلهمت الهوية من النخلة والتمر والبيئة السعودية.</p><p><b>دوري:</b> تطوير الفكرة الإعلانية، صياغة الشعار ورسالة العلامة، تخطيط المشاهد، تحديد الأسلوب والألوان، وكتابة المحتوى المصاحب.</p></div>
-            <a class="project-link" href="https://drive.google.com/file/d/1fXnhR14d3uBoqONeb1RyLsGEGKnZAS63/view" target="_blank" rel="noopener noreferrer">استعراض المشروع الإعلاني <span>↗</span></a>
+        <article class="project-row">
+          <div class="project-media"><img src="https://drive.google.com/thumbnail?id=1UPvW3n3OOW_BU-iZTOVMfsiV7ubCCQNi&sz=w1600" alt="مشهد رمزي داخل البيئة المدرسية عن اختيار الطفل الغذائي" loading="lazy"></div>
+          <div class="project-copy">
+            <p class="project-type">تحقيق صحفي · مفهوم بصري</p>
+            <h3>من يصنع اختيار الطفل؟</h3>
+            <p>حوّلت فكرة تحقيق صحفي عن البيئة الغذائية داخل المدرسة إلى عمل بصري يناقش تأثير المقصف والإعلانات والسعر والرفاق وتوفر البدائل في اختيارات الأطفال الغذائية.</p>
+            <p>يعرض التصميم مشهدًا رمزيًا داخل البيئة المدرسية، يظهر فيه طالب أمام منفذ غذائي يبدو كالمقصف المدرسي، وتحيط به رسائل إعلانية لوجبات سريعة. ويختصر المشهد التداخل بين ما يتعلمه الطفل عن الغذاء الصحي وبين الخيارات التي يواجهها خلال يومه المدرسي.</p>
+            <p>استخدمت أدوات الذكاء الاصطناعي في صياغة الـPrompt، وتحديد الشخصية والبيئة والتكوين وزاوية المشهد والإضاءة، ثم ولدت الصورة وراجعتها وجهزتها لتعمل كغلاف أو افتتاحية لمادة صحفية وتوعوية.</p>
+            <a class="project-link" href="https://drive.google.com/file/d/1UPvW3n3OOW_BU-iZTOVMfsiV7ubCCQNi/view?usp=drivesdk" target="_blank" rel="noopener noreferrer">فتح العمل البصري <span>↗</span></a>
+          </div>
+        </article>
+
+        <article class="project-row reverse">
+          <div class="project-media contain"><img src="https://drive.google.com/thumbnail?id=1M74d0rt2k121cXFTHF6VuSVaA6Xamfs4&sz=w1600" alt="التصميم الأصلي لتطبيق StudyNest" loading="lazy"></div>
+          <div class="project-copy">
+            <p class="project-type">تصور منتج رقمي · واجهات</p>
+            <h3>StudyNest App</h3>
+            <p>بنيت تصورًا بصريًا لتطبيق يسهّل حجز مساحات الدراسة، بداية من اختيار المساحة وحتى تحديد الموعد وتأكيد الحجز.</p>
+            <p>استخدمت الذكاء الاصطناعي في بلورة فكرة المنتج، وتنظيم رحلة المستخدم، وتوليد تصورات الواجهات والمشاهد الإعلانية.</p>
+            <p>جمعت العناصر داخل تصميم يشرح طريقة استخدام التطبيق، ويعرض فوائده الرئيسية بصورة مباشرة ومنظمة.</p>
+            <a class="project-link" href="https://drive.google.com/file/d/1M74d0rt2k121cXFTHF6VuSVaA6Xamfs4/view?usp=drivesdk" target="_blank" rel="noopener noreferrer">فتح التصميم <span>↗</span></a>
+          </div>
+        </article>
+
+        <article class="project-row">
+          <div class="project-media contain dark-media"><img src="https://drive.google.com/thumbnail?id=1C7b1mjUxUngcoprVhmu5Q5Rt-HiMXmUk&sz=w1600" alt="تصور إعلاني غير رسمي لهاتف BlackBerry Secure X1" loading="lazy"></div>
+          <div class="project-copy">
+            <p class="project-type">تصور إعلاني غير رسمي · منتج تقني</p>
+            <h3>BlackBerry Secure X1</h3>
+            <p>ابتكرت تصورًا إعلانيًا غير رسمي لهاتف تقني يعتمد على مفاهيم الأمان والثقة والأداء.</p>
+            <p>استخدمت أدوات الذكاء الاصطناعي في تصور شكل المنتج، وتوليد الهاتف والعناصر المرتبطة بالأمن الرقمي، وتجربة أكثر من تكوين بصري.</p>
+            <p>بعد اختيار الاتجاه الأنسب، كتبت العنوان والرسالة الإعلانية، ونظمت العناصر داخل تصميم عمودي مناسب للنشر على المنصات الرقمية.</p>
+            <a class="project-link" href="https://drive.google.com/file/d/1C7b1mjUxUngcoprVhmu5Q5Rt-HiMXmUk/view?usp=drivesdk" target="_blank" rel="noopener noreferrer">فتح التصميم <span>↗</span></a>
           </div>
         </article>
       </div>
     </section>
 
-    <section class="gallery" id="gallery">
-      <div class="container">
-        <div class="section-heading reveal">
-          <p class="eyebrow">مختارات سريعة</p>
-          <h2>اتجاهات بصرية متنوعة تخدم الفكرة قبل الزخرفة</h2>
-        </div>
-        <div class="gallery-grid">
-          <a class="gallery-item wide reveal" href="https://drive.google.com/file/d/1UPvW3n3OOW_BU-iZTOVMfsiV7ubCCQNi/view?usp=drivesdk" target="_blank" rel="noopener noreferrer"><img src="https://drive.google.com/thumbnail?id=1UPvW3n3OOW_BU-iZTOVMfsiV7ubCCQNi&sz=w1600" alt="مفهوم تأثير الإعلان على الطفل"><div><b>اختيار الطفل</b><span>محتوى مفاهيمي توعوي</span></div></a>
-          <a class="gallery-item tall reveal delay-1" href="https://drive.google.com/file/d/1C7b1mjUxUngcoprVhmu5Q5Rt-HiMXmUk/view?usp=drivesdk" target="_blank" rel="noopener noreferrer"><img src="https://drive.google.com/thumbnail?id=1C7b1mjUxUngcoprVhmu5Q5Rt-HiMXmUk&sz=w1200" alt="إعلان BlackBerry"><div><b>Secure X1</b><span>تصور إعلاني تقني</span></div></a>
-          <a class="gallery-item reveal delay-2" href="https://drive.google.com/file/d/1M74d0rt2k121cXFTHF6VuSVaA6Xamfs4/view?usp=drivesdk" target="_blank" rel="noopener noreferrer"><img src="https://drive.google.com/thumbnail?id=1M74d0rt2k121cXFTHF6VuSVaA6Xamfs4&sz=w1200" alt="StudyNest App"><div><b>StudyNest</b><span>تصور منتج رقمي</span></div></a>
-          <a class="gallery-item reveal delay-3" href="https://drive.google.com/file/d/1jwu_MaFHXq97Y-_yqQWNReQKb9suMdd-/view?usp=drivesdk" target="_blank" rel="noopener noreferrer"><img src="https://drive.google.com/thumbnail?id=1jwu_MaFHXq97Y-_yqQWNReQKb9suMdd-&sz=w1200" alt="فيديو التوحد"><div><b>الكشف المبكر يصنع فرقًا</b><span>سرد توعوي بالفيديو</span></div></a>
-        </div>
-      </div>
-    </section>
-
-    <section class="tools">
-      <div class="container tools-grid">
-        <div class="section-label reveal"><span>03</span><p>الأدوات</p></div>
-        <div class="tools-content reveal delay-1">
-          <h2>أختار الأداة وفق المهمة، وأقارن النتائج حتى أصل إلى الأنسب.</h2>
-          <div class="tool-list"><span>ChatGPT Plus</span><span>Gemini Pro</span><span>Claude</span><span>GLM</span><span>Veo 3</span><span>أدوات توليد الصور</span><span>أدوات التصميم والمونتاج</span></div>
-          <p>أستخدم هذه الأدوات في البحث، وتوليد الأفكار، وكتابة المحتوى والسيناريو، وصياغة الـPrompts، وتوليد الصور والفيديو، ثم أراجع النتائج وأعيد توجيهها وأدمجها داخل التصميم أو المونتاج للوصول إلى مخرج مناسب للاستخدام.</p>
-        </div>
-      </div>
-    </section>
-
-    <section class="contact" id="contact">
-      <div class="container contact-card reveal">
-        <div>
-          <p class="eyebrow">التواصل</p>
-          <h2>لدي فكرة، وأعرف كيف أحولها إلى مخرج بصري واضح ومؤثر.</h2>
-          <p>متاح للتدريب والتعاون في صناعة المحتوى البصري باستخدام أدوات الذكاء الاصطناعي، وإنتاج الفيديو، والتصميم، والحملات الإبداعية.</p>
-        </div>
-        <div class="contact-links">
-          <a href="https://wa.me/967777243690" target="_blank" rel="noopener noreferrer"><small>واتساب</small><b>777 243 690</b><span>↗</span></a>
-          <a href="tel:+967777243690"><small>اتصال</small><b>+967 777 243 690</b><span>↗</span></a>
-          <a href="mailto:hafedhalsharafi2@gmail.com"><small>البريد الإلكتروني</small><b>hafedhalsharafi2@gmail.com</b><span>↗</span></a>
-          <a href="https://github.com/madardigital" target="_blank" rel="noopener noreferrer"><small>GitHub</small><b>madardigital</b><span>↗</span></a>
+    <section class="contact-section" id="contact">
+      <div class="container contact-inner">
+        <header class="contact-heading">
+          <p class="section-number">05</p>
+          <h2>التواصل</h2>
+          <p><strong>حافظ الشرفي</strong><span lang="en" dir="ltr">AI Visual Content Creator</span></p>
+        </header>
+        <div class="contact-grid">
+          <a class="contact-item whatsapp" href="https://wa.me/967777243690" target="_blank" rel="noopener noreferrer" aria-label="التواصل عبر واتساب">
+            <span class="contact-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12.04 2a9.84 9.84 0 0 0-8.5 14.78L2 22l5.38-1.49A9.96 9.96 0 1 0 12.04 2Zm0 17.92a8.07 8.07 0 0 1-4.11-1.12l-.29-.17-3.19.88.85-3.11-.19-.32a8.05 8.05 0 1 1 6.93 3.84Zm4.42-6.03c-.24-.12-1.43-.7-1.65-.78-.22-.08-.38-.12-.54.12-.16.24-.62.78-.76.94-.14.16-.28.18-.52.06-.24-.12-1.02-.38-1.94-1.2a7.25 7.25 0 0 1-1.34-1.67c-.14-.24-.01-.37.11-.49.11-.11.24-.28.36-.42.12-.14.16-.24.24-.4.08-.16.04-.3-.02-.42-.06-.12-.54-1.3-.74-1.78-.19-.47-.39-.41-.54-.42h-.46c-.16 0-.42.06-.64.3-.22.24-.84.82-.84 2s.86 2.32.98 2.48c.12.16 1.69 2.58 4.1 3.62.57.25 1.02.39 1.37.5.58.18 1.1.16 1.51.1.46-.07 1.43-.58 1.63-1.14.2-.56.2-1.04.14-1.14-.06-.1-.22-.16-.46-.28Z"/></svg></span>
+            <span class="contact-label">واتساب</span>
+          </a>
+          <a class="contact-item phone" href="tel:+967777243690" aria-label="الاتصال الهاتفي">
+            <span class="contact-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M6.62 10.79a15.45 15.45 0 0 0 6.59 6.59l2.2-2.2a1 1 0 0 1 1.02-.24c1.12.37 2.33.57 3.57.57a1 1 0 0 1 1 1V20a1 1 0 0 1-1 1C10.61 21 3 13.39 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.45.57 3.57a1 1 0 0 1-.25 1.02l-2.2 2.2Z"/></svg></span>
+            <span class="contact-label">اتصال</span>
+          </a>
+          <a class="contact-item email" href="mailto:hafedhalsharafi2@gmail.com" aria-label="إرسال بريد إلكتروني">
+            <span class="contact-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M20 4H4a2 2 0 0 0-2 2v12c0 1.1.9 2 2 2h16a2 2 0 0 0 2-2V6c0-1.1-.9-2-2-2Zm0 4-8 5-8-5V6l8 5 8-5v2Z"/></svg></span>
+            <span class="contact-label">البريد الإلكتروني</span>
+          </a>
         </div>
       </div>
     </section>
   </main>
 
-  <footer>
-    <div class="container footer-shell"><div><b>حافظ الشرفي</b><span>AI Visual Content Creator</span></div><a href="#top">العودة إلى الأعلى ↑</a></div>
+  <footer class="site-footer">
+    <div class="container footer-inner"><p>حافظ الشرفي · <span lang="en" dir="ltr">AI Visual Content Creator</span></p><a href="#top">العودة إلى الأعلى ↑</a></div>
   </footer>
 
-  <script src="script.js?v=3"></script>
+  <script src="script.js?v=6"></script>
 </body>
 </html>
