@@ -3,140 +3,122 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="معرض أعمال حافظ الشرفي في المحتوى الرقمي، استراتيجيات التواصل، خدمة العملاء، وتصميم Canva.">
+  <meta name="description" content="معرض أعمال حافظ الشرفي في المحتوى الرقمي والحملات والتقارير وتصميم Canva.">
   <meta name="theme-color" content="#0d1713">
-  <title>حافظ الشرفي | المحتوى الرقمي وCanva</title>
+  <title>حافظ الشرفي | معرض أعمال المحتوى الرقمي</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="../styles.css?v=13">
-  <link rel="stylesheet" href="../final-polish.css?v=13">
   <style>
-    .hero-art img{object-position:top center}.hero-art-main img,.hero-art-autism img{object-fit:cover}.hero-art-child img,.hero-art-vat img{object-fit:cover}
-    .project-media.contain{background:#ded6c9}.project-media.contain img{object-fit:contain;padding:18px;background:#ded6c9}
-    .compact-media img{object-fit:cover}.compact-media.portrait img{object-position:top center}
-    .text-media{display:grid;place-items:center;padding:28px;background:linear-gradient(135deg,#17271f,#314a3d);color:#f4efe5;text-align:center}.text-media strong{font-size:26px;line-height:1.5}.text-media span{display:block;color:#d8b47b;font-size:13px;margin-bottom:8px}
-    .project-links{display:flex;flex-wrap:wrap;gap:10px;margin-top:24px}.project-links a{display:inline-flex;align-items:center;justify-content:center;padding:10px 16px;border-radius:999px;background:#0d1713;color:#fff;font-weight:800;font-size:14px}.project-links a.secondary{background:transparent;color:#0d1713;border:1px solid rgba(13,23,19,.28)}
-    .role-note{margin-top:18px;padding:14px 16px;border-radius:14px;background:rgba(13,23,19,.06);font-size:14px;color:#3f4b44}.role-note b{color:#0d1713}
-    .contact-link-simple{font-size:18px;font-weight:800;word-break:break-word}
-    @media(max-width:760px){.project-media.contain img{padding:10px}.project-links{display:grid}.project-links a{width:100%}}
+    :root{--ink:#0d1713;--forest:#1d3027;--cream:#f2ede4;--paper:#fffdf8;--gold:#cfaa73;--muted:#69736d;--line:rgba(13,23,19,.14)}
+    *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:"Tajawal",sans-serif;background:var(--cream);color:var(--ink);line-height:1.8}img{display:block;max-width:100%}a{color:inherit;text-decoration:none}.container{width:min(1180px,calc(100% - 36px));margin:auto}
+    .site-header{position:sticky;top:0;z-index:20;background:rgba(13,23,19,.96);backdrop-filter:blur(14px);border-bottom:1px solid rgba(255,255,255,.08)}.nav{min-height:72px;display:flex;align-items:center;justify-content:space-between;gap:24px}.brand{display:flex;align-items:center;gap:12px;color:white}.mark{width:42px;height:42px;border-radius:50%;display:grid;place-items:center;background:var(--gold);color:var(--ink);font-weight:900;font-size:21px}.brand strong{display:block;font-size:18px}.brand small{display:block;color:#c8cec9;font-size:12px}.nav-links{display:flex;gap:22px;color:#dde3df;font-size:14px;font-weight:700}.nav-links a:hover{color:var(--gold)}
+    .hero{background:var(--ink);color:white;padding:88px 0 72px;overflow:hidden}.hero-grid{display:grid;grid-template-columns:1fr 1.1fr;gap:70px;align-items:center}.kicker{color:var(--gold);font-weight:800;letter-spacing:.02em}.hero h1{font-size:clamp(42px,6vw,76px);line-height:1.16;margin:12px 0 22px}.hero p{color:#cbd2ce;font-size:18px;max-width:680px}.hero-actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:28px}.button{padding:12px 20px;border-radius:999px;font-weight:800}.button.primary{background:var(--gold);color:var(--ink)}.button.secondary{border:1px solid rgba(255,255,255,.25);color:white}.collage{display:grid;grid-template-columns:1.15fr .85fr;grid-template-rows:240px 180px;gap:14px;transform:rotate(-1deg)}.collage a{overflow:hidden;border-radius:20px;background:#24372d;border:1px solid rgba(255,255,255,.08)}.collage a:first-child{grid-row:1/3}.collage img{width:100%;height:100%;object-fit:cover;object-position:top center;transition:.35s}.collage a:hover img{transform:scale(1.035)}
+    .section{padding:88px 0}.section-heading{display:flex;align-items:end;justify-content:space-between;gap:24px;margin-bottom:38px}.section-heading h2{font-size:clamp(32px,4vw,52px);margin:0;line-height:1.2}.section-heading p{max-width:610px;margin:0;color:var(--muted)}.section-dark{background:var(--forest);color:white}.section-dark .section-heading p{color:#c8d0cb}
+    .featured-list{display:grid;gap:30px}.project{display:grid;grid-template-columns:1.03fr .97fr;background:var(--paper);border-radius:26px;overflow:hidden;box-shadow:0 20px 50px rgba(13,23,19,.09);border:1px solid rgba(13,23,19,.08)}.project:nth-child(even) .project-media{order:2}.project-media{min-height:430px;background:#ddd6ca}.project-media img{width:100%;height:100%;object-fit:cover;object-position:top center}.project-copy{padding:46px}.label{font-size:13px;color:#83673f;font-weight:800;margin-bottom:8px}.project h3{font-size:34px;line-height:1.25;margin:0 0 16px}.project p{color:#49534e;margin:0 0 16px}.tags{display:flex;gap:8px;flex-wrap:wrap;margin:22px 0}.tags span{padding:7px 11px;border-radius:999px;background:#ece5da;font-size:12px;font-weight:800}.actions{display:flex;gap:10px;flex-wrap:wrap}.actions a,.viewer summary{display:inline-flex;align-items:center;justify-content:center;padding:11px 16px;border-radius:999px;background:var(--ink);color:white;font-weight:800;font-size:14px;cursor:pointer;list-style:none}.actions a.alt{background:transparent;color:var(--ink);border:1px solid var(--line)}
+    .viewer{grid-column:1/-1;background:#e9e2d7;border-top:1px solid var(--line)}.viewer summary{margin:18px;width:max-content}.viewer summary::-webkit-details-marker{display:none}.frame-wrap{padding:0 18px 18px}.frame-wrap iframe{width:100%;height:720px;border:0;border-radius:18px;background:white}.fallback{display:block;padding:12px 4px 2px;text-align:center;font-size:13px;color:#59645e}
+    .gallery{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}.work-card{background:var(--paper);border-radius:22px;overflow:hidden;border:1px solid rgba(13,23,19,.08);box-shadow:0 14px 36px rgba(13,23,19,.08)}.work-card a.media{display:block;height:310px;background:#ded8ce;overflow:hidden}.work-card a.media img{width:100%;height:100%;object-fit:cover;object-position:top center;transition:.3s}.work-card:hover img{transform:scale(1.025)}.work-card .copy{padding:24px}.work-card h3{font-size:23px;line-height:1.35;margin:5px 0 10px}.work-card p{font-size:14px;color:#5b655f;margin:0}.work-card .mini{color:#8c6d43;font-weight:800;font-size:12px}
+    .report-grid{display:grid;grid-template-columns:1fr 1fr;gap:24px}.report-card{background:#fff;border-radius:24px;padding:28px;border:1px solid var(--line)}.report-card h3{font-size:27px;margin:0 0 12px}.report-card p{color:#5a645e}.report-card .viewer{margin:22px -28px -28px;border-radius:0 0 24px 24px;overflow:hidden}.report-card .frame-wrap iframe{height:620px}
+    .contact{background:var(--ink);color:white;padding:70px 0}.contact-grid{display:flex;justify-content:space-between;gap:30px;align-items:center}.contact h2{font-size:40px;margin:0 0 10px}.contact p{margin:0;color:#c6cec9}.contact-links{display:flex;gap:12px;flex-wrap:wrap}.contact-links a{padding:12px 18px;border-radius:999px;border:1px solid rgba(255,255,255,.22);font-weight:800}.contact-links a:first-child{background:var(--gold);color:var(--ink);border-color:var(--gold)}footer{padding:22px;background:#09100d;color:#88938d;text-align:center;font-size:13px}
+    @media(max-width:900px){.nav-links{display:none}.hero-grid,.project,.report-grid{grid-template-columns:1fr}.project:nth-child(even) .project-media{order:0}.gallery{grid-template-columns:1fr 1fr}.collage{margin-top:20px}.project-media{min-height:360px}.project-copy{padding:30px}.frame-wrap iframe{height:540px}.contact-grid{display:block}.contact-links{margin-top:22px}}
+    @media(max-width:620px){.hero{padding-top:58px}.hero h1{font-size:42px}.collage{grid-template-rows:190px 150px}.section{padding:64px 0}.section-heading{display:block}.section-heading p{margin-top:12px}.gallery{grid-template-columns:1fr}.work-card a.media{height:380px}.project h3{font-size:28px}.frame-wrap iframe{height:480px}.contact h2{font-size:32px}}
   </style>
 </head>
 <body>
-  <a class="skip-link" href="#main">الانتقال إلى المحتوى</a>
-  <header class="site-header" id="top">
-    <div class="container nav-shell">
-      <a class="brand" href="#top" aria-label="العودة إلى أعلى الصفحة"><span class="brand-mark">ح</span><span class="brand-copy"><strong>حافظ الشرفي</strong><small lang="en" dir="ltr">Digital Content & Customer Communication</small></span></a>
-      <button class="menu-button" type="button" aria-label="فتح قائمة التنقل" aria-expanded="false" aria-controls="main-nav"><span></span><span></span><span></span></button>
-      <nav class="main-nav" id="main-nav" aria-label="التنقل الرئيسي"><a href="#about">من أنا؟</a><a href="#services">ما الذي أقدّمه؟</a><a href="#workflow">كيف أعمل؟</a><a href="#projects">نماذج الأعمال</a><a href="#contact">التواصل</a></nav>
+  <header class="site-header">
+    <div class="container nav">
+      <a class="brand" href="#top"><span class="mark">ح</span><span><strong>حافظ الشرفي</strong><small>معرض أعمال المحتوى الرقمي والتصميم</small></span></a>
+      <nav class="nav-links"><a href="#featured">المشروعات الرئيسية</a><a href="#canva">نماذج Canva</a><a href="#reports">التقارير والتحليل</a><a href="#contact">التواصل</a></nav>
     </div>
   </header>
 
-  <main id="main">
-    <section class="hero" aria-labelledby="hero-title">
+  <main id="top">
+    <section class="hero">
       <div class="container hero-grid">
-        <div class="hero-copy">
-          <p class="hero-kicker">المحتوى الرقمي، استراتيجيات التواصل، وتصميم Canva</p>
-          <h1 id="hero-title"><span>من الفكرة والبحث إلى محتوى</span><span>منظم، واضح، وجاهز للنشر.</span></h1>
-          <p class="hero-role"><strong>حافظ الشرفي</strong><span lang="en" dir="ltr">Digital Content & Customer Communication</span></p>
+        <div>
+          <div class="kicker">Portfolio — Digital Content & Canva</div>
+          <h1>معرض أعمال المحتوى الرقمي والتصميم الاتصالي.</h1>
+          <p>نماذج مختارة من مشروعات نُفذت لعملاء خاصين في استراتيجيات المحتوى، الحملات، التقارير، الكتابة الرقمية، والتصميم باستخدام Canva. يمكن فتح العينات وتصفح التقارير مباشرة داخل الصفحة.</p>
+          <div class="hero-actions"><a class="button primary" href="#featured">تصفح الأعمال</a><a class="button secondary" href="#canva">نماذج Canva</a></div>
         </div>
-        <div class="hero-showcase" aria-hidden="true">
-          <div class="hero-art hero-art-main"><img src="assets/festival-showcase.svg" alt="" fetchpriority="high"></div>
-          <div class="hero-art hero-art-autism"><img src="assets/hajj-showcase.svg" alt="" fetchpriority="high"></div>
-          <div class="hero-art hero-art-child"><img src="assets/canva-aware-thumb.svg" alt=""></div>
-          <div class="hero-art hero-art-vat"><img src="assets/canva-barns-thumb.svg" alt=""></div>
-        </div>
-      </div>
-    </section>
-
-    <section class="section section-light" id="about">
-      <div class="container readable">
-        <header class="section-heading"><p class="section-number">01</p><h2>من أنا؟</h2></header>
-        <div class="about-copy">
-          <p>أخصائي محتوى رقمي وتواصل مع العملاء، حاصل على بكالوريوس إعلام تخصص علاقات عامة وإعلان. أعمل بصورة مستقلة منذ عام 2022 على مشروعات مدفوعة لعملاء خاصين، تشمل استراتيجيات المحتوى، الحملات، التقارير، الكتابة الرقمية، وتصميم المخرجات.</p>
-          <p>أتولى البحث وجمع المعلومات، فهم الجمهور، بناء الفكرة والخطة، كتابة المحتوى، تنظيم الوثائق، ثم تصميم المخرج النهائي باستخدام Canva. لذلك تُعرض نماذج Canva هنا بوصفها دليلًا على قدرتي على إدارة المحتوى والتصميم معًا، لا على استخدام قالب جاهز فقط.</p>
-          <p>كما أمتلك خبرة سابقة في خدمة العملاء وبريد القراء والعلاقات العامة، ما يساعدني على التعامل مع المحتوى باعتباره جزءًا من تجربة العميل وصورة الجهة.</p>
+        <div class="collage" aria-label="معاينات من الأعمال">
+          <a href="assets/festival-showcase.svg" target="_blank"><img src="assets/festival-showcase.svg" alt="معاينة مهرجان الثقافات والشعوب"></a>
+          <a href="assets/hajj-showcase.svg" target="_blank"><img src="assets/hajj-showcase.svg" alt="معاينة حملة حج صحي"></a>
+          <a href="assets/canva-aware-thumb.svg" target="_blank"><img src="assets/canva-aware-thumb.svg" alt="معاينة نشرة واعي رقميا"></a>
         </div>
       </div>
     </section>
 
-    <section class="section section-dark" id="services">
+    <section class="section" id="featured">
       <div class="container">
-        <header class="section-heading heading-on-dark"><p class="section-number">02</p><h2>ما الذي أقدّمه؟</h2><p>أدير دورة المحتوى من فهم الاحتياج حتى التسليم والمتابعة.</p></header>
-        <div class="services-grid">
-          <article class="service-card"><span>01</span><h3>استراتيجية المحتوى</h3><p>تحديد الجمهور والأهداف والرسائل ومحاور المحتوى بما يناسب الجهة والمنصة.</p></article>
-          <article class="service-card"><span>02</span><h3>كتابة المحتوى</h3><p>منشورات وإعلانات وهوكات وسيناريوهات ريلز ونصوص توعوية وتعريفية.</p></article>
-          <article class="service-card"><span>03</span><h3>خطط النشر</h3><p>إعداد تقاويم تشغيلية وتوزيع الصيغ والمواعيد والدعوات إلى الإجراء.</p></article>
-          <article class="service-card"><span>04</span><h3>تحليل الحسابات والحملات</h3><p>قراءة وظيفة المحتوى ورحلة الجمهور واستخلاص فرص التحسين.</p></article>
-          <article class="service-card"><span>05</span><h3>تصميم Canva</h3><p>تقارير وعروض وإنفوجرافيك ونشرات وبوسترات مع بناء تسلسل بصري واضح.</p></article>
-          <article class="service-card"><span>06</span><h3>خدمة العملاء والتواصل</h3><p>صياغة الردود، تصنيف الطلبات، التحويل والمتابعة حتى إغلاق الحالة.</p></article>
-          <article class="service-card service-card-wide"><span>07</span><h3>التقارير والتحسين</h3><p>تنظيم البيانات والملاحظات وإعداد تقارير مختصرة وتوصيات قابلة للتنفيذ.</p></article>
+        <header class="section-heading"><h2>مشروعات مختارة</h2><p>تُعرض المشروعات بصيغة مهنية تربط الفكرة بالمحتوى والمخرج النهائي، مع إتاحة التقرير أو النموذج المرتبط بكل عمل.</p></header>
+        <div class="featured-list">
+          <article class="project">
+            <a class="project-media" href="assets/festival-showcase.svg" target="_blank"><img src="assets/festival-showcase.svg" alt="نماذج من مهرجان الثقافات والشعوب"></a>
+            <div class="project-copy">
+              <div class="label">استراتيجية محتوى وحملة علاقات عامة</div>
+              <h3>مهرجان الثقافات والشعوب</h3>
+              <p>مشروع محتوى واتصال لفعالية ثقافية جماهيرية، شمل تنظيم الرسائل ومحاور النشر، إعداد خطة المحتوى، تطوير مواد التغطية والترويج، وكتابة أفكار منشورات وريلز تساعد على تحويل الاهتمام الرقمي إلى حضور وتفاعل مع الفعالية.</p>
+              <div class="tags"><span>استراتيجية محتوى</span><span>فعاليات</span><span>تغطية</span><span>ريلز</span></div>
+              <div class="actions"><a href="projects/festival.html">تصفح دراسة الحالة</a><a class="alt" href="assets/festival-showcase.svg" target="_blank">فتح العينة</a></div>
+            </div>
+            <details class="viewer"><summary>تصفح ملف المشروع داخل الصفحة</summary><div class="frame-wrap"><iframe loading="lazy" src="https://docs.google.com/document/d/1pD43FIQS770YlIuaXZfvYR20TJDhxGYxOTTit8kgxE8/preview" title="خطة محتوى مهرجان الثقافات والشعوب"></iframe><a class="fallback" href="https://docs.google.com/document/d/1pD43FIQS770YlIuaXZfvYR20TJDhxGYxOTTit8kgxE8/preview" target="_blank">فتح الملف في نافذة مستقلة عند تعذر ظهوره هنا</a></div></details>
+          </article>
+
+          <article class="project">
+            <a class="project-media" href="assets/hajj-showcase.svg" target="_blank"><img src="assets/hajj-showcase.svg" alt="نماذج من حملة حج صحي"></a>
+            <div class="project-copy">
+              <div class="label">حملة توعوية وتقرير استراتيجي</div>
+              <h3>حملة «حج صحي»</h3>
+              <p>حملة توعوية متكاملة حول الوقاية الصحية أثناء الحج، جمعت بين تحليل الموقف والجمهور، صياغة الأهداف والرسائل، بناء التكتيكات الرقمية والميدانية، إعداد الخطة الزمنية، وتنظيم مؤشرات قياس الأثر داخل تقرير وتصميم مترابطين.</p>
+              <div class="tags"><span>حملات توعوية</span><span>SMART</span><span>رسائل صحية</span><span>قياس أثر</span></div>
+              <div class="actions"><a href="projects/hajj-health.html">تصفح دراسة الحالة</a><a class="alt" href="assets/hajj-showcase.svg" target="_blank">فتح العينة</a></div>
+            </div>
+            <details class="viewer"><summary>تصفح تقرير الحملة داخل الصفحة</summary><div class="frame-wrap"><iframe loading="lazy" src="https://drive.google.com/file/d/1vQrPM-ox4eomM5IX-AtBNWgXwHMgoIfv/preview" title="تقرير حملة حج صحي"></iframe><a class="fallback" href="https://drive.google.com/file/d/1vQrPM-ox4eomM5IX-AtBNWgXwHMgoIfv/preview" target="_blank">فتح التقرير في نافذة مستقلة عند تعذر ظهوره هنا</a></div></details>
+          </article>
+
+          <article class="project">
+            <a class="project-media" href="assets/canva-barns-thumb.svg" target="_blank"><img src="assets/canva-barns-thumb.svg" alt="تقرير وخطة Barns Coffee"></a>
+            <div class="project-copy">
+              <div class="label">تقرير سوشيال ميديا وتقويم نشر</div>
+              <h3>Barn’s Coffee</h3>
+              <p>نموذج يجمع بين متابعة إنتاج مواد السوشيال ميديا وبناء جدول نشر يومي متعدد المنصات، مع توزيع المحتوى بين الصور، الفيديو القصير، العروض، المحتوى التفاعلي، والرسائل المرتبطة بالهوية التجارية.</p>
+              <div class="tags"><span>خطة محتوى</span><span>جدولة</span><span>متابعة تنفيذ</span><span>Canva</span></div>
+              <div class="actions"><a href="assets/canva-barns-thumb.svg" target="_blank">عرض النموذج</a></div>
+            </div>
+          </article>
         </div>
       </div>
     </section>
 
-    <section class="section section-light" id="workflow">
+    <section class="section section-dark" id="canva">
       <div class="container">
-        <header class="section-heading workflow-heading"><p class="section-number">03</p><h2>كيف أعمل؟</h2></header>
-        <div class="workflow-grid">
-          <article class="workflow-card"><span class="workflow-icon">01</span><div><h3>فهم المشروع</h3><p>تحديد الاحتياج والجمهور والمنصة والمخرج المطلوب.</p></div></article>
-          <article class="workflow-card"><span class="workflow-icon">02</span><div><h3>البحث وتحليل الجمهور</h3><p>جمع المعلومات وفهم السياق والسلوك والرسائل المناسبة.</p></div></article>
-          <article class="workflow-card"><span class="workflow-icon">03</span><div><h3>بناء الفكرة والخطة</h3><p>تحديد المحاور والصيغ والتسلسل وخطة النشر أو التقرير.</p></div></article>
-          <article class="workflow-card"><span class="workflow-icon">04</span><div><h3>كتابة المحتوى</h3><p>صياغة النصوص والعناوين والهوكات والسيناريوهات.</p></div></article>
-          <article class="workflow-card"><span class="workflow-icon">05</span><div><h3>التصميم والتنفيذ</h3><p>تنظيم المعلومات وتصميم المخرج باستخدام Canva أو تجهيز المحتوى للنشر.</p></div></article>
-          <article class="workflow-card"><span class="workflow-icon">06</span><div><h3>المراجعة والتسليم</h3><p>تدقيق النص والهوية وتنفيذ التعديلات حتى اعتماد النسخة النهائية.</p></div></article>
+        <header class="section-heading"><h2>نماذج مختارة باستخدام Canva</h2><p>في هذه النماذج جرى إعداد المحتوى وتنظيم المعلومات وبناء التسلسل البصري، ثم إخراج العمل النهائي باستخدام Canva.</p></header>
+        <div class="gallery">
+          <article class="work-card"><a class="media" href="assets/canva-aware-thumb.svg" target="_blank"><img src="assets/canva-aware-thumb.svg" alt="نشرة واعي رقميا"></a><div class="copy"><div class="mini">نشرة توعوية</div><h3>هاتفك صديقك أم عدوك؟</h3><p>كتابة وتصميم نشرة توعوية تلخص قضية التوازن الرقمي وتقدم خطوات عملية في مخرج بصري قابل للنشر.</p></div></article>
+          <article class="work-card"><a class="media" href="assets/canva-radiology-thumb.svg" target="_blank"><img src="assets/canva-radiology-thumb.svg" alt="الخطة التطويرية لقسم الأشعة"></a><div class="copy"><div class="mini">تقرير مؤسسي</div><h3>الخطة التطويرية لقسم الأشعة</h3><p>تنظيم محتوى مؤسسي طويل، وبناء جداول وبطاقات تثقيفية طبية ضمن هوية بصرية موحدة وواضحة.</p></div></article>
+          <article class="work-card"><a class="media" href="assets/canva-trip-thumb.svg" target="_blank"><img src="assets/canva-trip-thumb.svg" alt="بوستر رحلة تعليمية وترفيهية"></a><div class="copy"><div class="mini">بوستر إعلاني</div><h3>رحلة التجارب التعليمية والترفيهية</h3><p>تصميم إعلان لفعالية موجهة للأطفال يجمع بين الفكرة والأنشطة والفوائد والمعلومات التشغيلية في تسلسل بصري مباشر.</p></div></article>
+          <article class="work-card"><a class="media" href="assets/canva-barns-thumb.svg" target="_blank"><img src="assets/canva-barns-thumb.svg" alt="خطة Barns Coffee"></a><div class="copy"><div class="mini">تقرير وجدول نشر</div><h3>Barn’s Coffee</h3><p>إخراج تقرير محتوى وجدول نشر يوضح أنواع المواد، المنصات، الملاحظات، وحالة التنفيذ.</p></div></article>
+          <article class="work-card"><a class="media" href="assets/hajj-showcase.svg" target="_blank"><img src="assets/hajj-showcase.svg" alt="عرض حملة حج صحي"></a><div class="copy"><div class="mini">عرض حملة</div><h3>حج صحي</h3><p>تصميم عرض لحملة توعوية يربط المشكلة والجمهور والرسائل والتكتيكات ومؤشرات القياس في مسار واحد.</p></div></article>
+          <article class="work-card"><a class="media" href="assets/news-report-thumb.svg" target="_blank"><img src="assets/news-report-thumb.svg" alt="مؤشرات الأخبار الصحفية"></a><div class="copy"><div class="mini">تقرير بصري</div><h3>مؤشرات الأخبار الصحفية</h3><p>عرض بصري للبيانات والمؤشرات الصحفية يساعد على القراءة السريعة واستخلاص الاتجاهات الرئيسية.</p></div></article>
         </div>
       </div>
     </section>
 
-    <section class="section section-projects" id="projects">
+    <section class="section" id="reports">
       <div class="container">
-        <header class="section-heading projects-heading"><p class="section-number">04</p><h2>نماذج الأعمال</h2><p>نماذج أصلية من مشروعات نفذتها بالكامل، مع إزالة أسماء العملاء والبيانات الأكاديمية والخاصة عند الحاجة.</p></header>
-        <div class="featured-projects">
-          <article class="featured-project">
-            <a class="project-media contain" href="assets/festival-showcase.svg" target="_blank" rel="noopener"><img src="assets/festival-showcase.svg" alt="نماذج من مشروع مهرجان الثقافات والشعوب"></a>
-            <div class="project-copy"><p class="project-type">استراتيجية محتوى وحملة علاقات عامة</p><h3>مهرجان الثقافات والشعوب</h3><p>منظومة متكاملة شملت الأهداف والجمهور والرسائل، خطة المحتوى، التغطية، نماذج المنشورات، العد التنازلي، وأفكار الريلز.</p><div class="project-tags"><span>استراتيجية محتوى</span><span>فعاليات</span><span>ريلز</span><span>تغطية</span></div><div class="role-note"><b>دوري:</b> البحث، التخطيط، كتابة المحتوى، تنظيم المخرجات والتصميم.</div><div class="project-links"><a href="projects/festival.html">تصفح دراسة الحالة</a><a class="secondary" href="assets/festival-showcase.svg" target="_blank">فتح العينة الأصلية</a></div></div>
-          </article>
-
-          <article class="featured-project reverse">
-            <a class="project-media contain" href="assets/hajj-showcase.svg" target="_blank" rel="noopener"><img src="assets/hajj-showcase.svg" alt="نماذج من حملة حج صحي"></a>
-            <div class="project-copy"><p class="project-type">حملة توعوية وتقرير استراتيجي</p><h3>حملة «حج صحي»</h3><p>حملة صحية متعددة القنوات مع تقرير مفصل يشمل تحليل الموقف، تقسيم الجمهور، أهداف SMART، الرسائل، التكتيكات، الخطة الزمنية وقياس الأثر.</p><div class="project-tags"><span>حملة توعوية</span><span>SMART</span><span>تقارير</span><span>قياس أثر</span></div><div class="role-note"><b>دوري:</b> البحث، بناء الاستراتيجية، كتابة التقرير، تصميم العرض والإخراج النهائي.</div><div class="project-links"><a href="projects/hajj-health.html">تصفح دراسة الحالة</a><a class="secondary" href="assets/hajj-showcase.svg" target="_blank">فتح العينة الأصلية</a></div></div>
-          </article>
-
-          <article class="featured-project">
-            <a class="project-media contain" href="assets/canva-barns-thumb.svg" target="_blank" rel="noopener"><img src="assets/canva-barns-thumb.svg" alt="تقرير وخطة محتوى Barns Coffee"></a>
-            <div class="project-copy"><p class="project-type">خطة سوشيال ميديا وجدول نشر</p><h3>Barn’s Coffee</h3><p>تقرير لتنفيذ مواد السوشيال ميديا وجدول نشر يومي يوزع المحتوى بين الصور، الفيديو القصير، العروض، القصص والمحتوى التفاعلي عبر عدة منصات.</p><div class="project-tags"><span>تقويم محتوى</span><span>متابعة تنفيذ</span><span>Canva</span><span>سوشيال ميديا</span></div><div class="role-note"><b>دوري:</b> إعداد المحتوى، تنظيم خطة النشر، متابعة المخرجات وتصميم التقرير.</div><div class="project-links"><a href="assets/canva-barns-thumb.svg" target="_blank">فتح النموذج</a></div></div>
-          </article>
-
-          <article class="featured-project reverse">
-            <a class="project-media contain" href="assets/analysis-thumb.svg" target="_blank" rel="noopener"><img src="assets/analysis-thumb.svg" alt="تحليل استراتيجية محتوى على وسائل التواصل"></a>
-            <div class="project-copy"><p class="project-type">تحليل حسابات وتوصيات</p><h3>تحليل استراتيجية STC الرقمية</h3><p>تحليل أنواع المحتوى ووظيفة المنصات، وربط الرسائل بالهوية والخدمات ورحلة العميل والتحويل الرقمي، ثم صياغة توصيات تطويرية.</p><div class="project-tags"><span>تحليل محتوى</span><span>رحلة العميل</span><span>توصيات</span><span>منصات</span></div><div class="project-links"><a href="projects/content-analysis.html">تصفح نموذج التحليل</a></div></div>
-          </article>
-        </div>
-
-        <div class="compact-projects">
-          <article class="compact-project"><a class="compact-media portrait" href="assets/canva-aware-thumb.svg" target="_blank"><img src="assets/canva-aware-thumb.svg" alt="نشرة واعي رقميا"></a><div class="compact-copy"><p class="project-type">Canva — نشرة توعوية</p><h3>هاتفك صديقك أم عدوك؟</h3><p>بحث وكتابة وتصميم نشرة توعوية تقدم بيانات وثلاث خطوات عملية لاستعادة التوازن الرقمي.</p><div class="role-note"><b>دوري:</b> المحتوى والتنظيم والتصميم كاملًا.</div></div></article>
-          <article class="compact-project"><a class="compact-media" href="assets/canva-radiology-thumb.svg" target="_blank"><img src="assets/canva-radiology-thumb.svg" alt="الخطة التطويرية لقسم الأشعة"></a><div class="compact-copy"><p class="project-type">Canva — تقرير مؤسسي</p><h3>الخطة التطويرية لقسم الأشعة</h3><p>وثيقة طويلة تضم تحليلًا وجداول وبطاقات تثقيفية ثنائية اللغة ضمن هوية موحدة.</p><div class="role-note"><b>دوري:</b> إعداد المحتوى، تنظيم الوثيقة، وتصميم الصفحات.</div></div></article>
-          <article class="compact-project"><a class="compact-media" href="assets/canva-trip-thumb.svg" target="_blank"><img src="assets/canva-trip-thumb.svg" alt="بوستر رحلة التجارب التعليمية والترفيهية"></a><div class="compact-copy"><p class="project-type">Canva — بوستر إعلاني</p><h3>رحلة التجارب التعليمية والترفيهية</h3><p>بوستر موجه للأطفال يجمع الأنشطة والفوائد ومعلومات التسجيل في تسلسل واضح.</p><div class="role-note"><b>دوري:</b> كتابة المحتوى وتنظيمه وتصميم الإعلان.</div></div></article>
-          <article class="compact-project"><a class="compact-media" href="assets/news-report-thumb.svg" target="_blank"><img src="assets/news-report-thumb.svg" alt="تقرير مؤشرات الأخبار الصحفية"></a><div class="compact-copy"><p class="project-type">تقرير مؤشرات</p><h3>مؤشرات الأخبار الصحفية</h3><p>تلخيص المواد المنشورة والجولات والاتجاهات التحريرية في تقرير بصري يسهل قراءته.</p><div class="role-note"><b>دوري:</b> تنظيم البيانات وصياغة الملخص وبناء العرض.</div></div></article>
-          <article class="compact-project"><a class="compact-media text-media" href="projects/writing-samples.html"><div><span>CONTENT WRITING</span><strong>من الفكرة إلى منشور وسيناريو</strong></div></a><div class="compact-copy"><p class="project-type">كتابة رقمية</p><h3>منشورات وهوكات وريلز</h3><p>نماذج تعريـفية وتوعوية وترويجية، وسيناريوهات قصيرة مبنية على المشكلة والحل والدعوة إلى الإجراء.</p><div class="project-links"><a href="projects/writing-samples.html">تصفح النماذج</a></div></div></article>
-          <article class="compact-project"><a class="compact-media text-media" href="projects/customer-service.html"><div><span>CUSTOMER SERVICE</span><strong>رد واضح، تحويل، متابعة وإغلاق</strong></div></a><div class="compact-copy"><p class="project-type">خدمة العملاء</p><h3>نماذج الردود وإدارة الطلبات</h3><p>قوالب للاستفسارات والشكاوى وتأخر الطلبات، وسجل متابعة وتقرير يومي ونبرة تواصل مهنية.</p><div class="project-links"><a href="projects/customer-service.html">تصفح الدليل العملي</a></div></div></article>
+        <header class="section-heading"><h2>التقارير والتحليل</h2><p>نماذج توضح القدرة على قراءة المحتوى والحسابات، تنظيم النتائج، وصياغة توصيات قابلة للتطبيق.</p></header>
+        <div class="report-grid">
+          <article class="report-card"><h3>تحليل استراتيجية STC الرقمية</h3><p>تحليل لأنواع المحتوى ووظيفة كل منصة، وربط الرسائل بالهوية والخدمات ورحلة العميل والتحويل الرقمي.</p><div class="actions"><a href="projects/content-analysis.html">عرض الملخص التحليلي</a></div><details class="viewer"><summary>تصفح التقرير داخل الصفحة</summary><div class="frame-wrap"><iframe loading="lazy" src="https://docs.google.com/document/d/1NeSMX4oi_pQjNXDQb6vP4SSYldVy-QRUrinKUU9nca4/preview" title="تحليل استراتيجية STC الرقمية"></iframe></div></details></article>
+          <article class="report-card"><h3>نماذج الكتابة الرقمية</h3><p>منشورات تعريفية وتوعوية وترويجية، وهوكات وسيناريوهات ريلز مبنية على المشكلة والحل والدعوة إلى الإجراء.</p><div class="actions"><a href="projects/writing-samples.html">تصفح نماذج الكتابة</a></div></article>
+          <article class="report-card"><h3>نماذج خدمة العملاء</h3><p>نماذج عملية لصياغة الردود، تصنيف الطلبات، معالجة الشكاوى، والمتابعة حتى إغلاق الحالة مع المحافظة على نبرة الجهة.</p><div class="actions"><a href="projects/customer-service.html">تصفح النماذج</a></div></article>
+          <article class="report-card"><h3>مؤشرات الأخبار الصحفية</h3><p>تقرير بصري ينظم الأخبار والاتجاهات التحريرية والمؤشرات في بنية واضحة تساعد على المتابعة واتخاذ القرار.</p><div class="actions"><a href="assets/news-report-thumb.svg" target="_blank">فتح العينة</a></div></article>
         </div>
       </div>
     </section>
 
-    <section class="section section-contact" id="contact">
-      <div class="container contact-layout">
-        <div class="contact-copy"><p class="section-number">05</p><h2>لنتواصل</h2><p>للفرص الوظيفية والمشروعات المتعلقة بالمحتوى الرقمي، التواصل مع العملاء، والتصميم عبر Canva.</p></div>
-        <div class="contact-cards">
-          <a class="contact-card" href="https://wa.me/967777243690" target="_blank" rel="noopener"><span>واتساب</span><strong class="contact-link-simple" dir="ltr">+967 777 243 690</strong></a>
-          <a class="contact-card" href="mailto:hafedhalsharafi2@gmail.com"><span>البريد الإلكتروني</span><strong class="contact-link-simple" dir="ltr">hafedhalsharafi2@gmail.com</strong></a>
-          <a class="contact-card" href="../"><span>المعرض الآخر</span><strong>المحتوى البصري بالذكاء الاصطناعي</strong></a>
-        </div>
-      </div>
-    </section>
+    <section class="contact" id="contact"><div class="container contact-grid"><div><h2>حافظ الشرفي</h2><p>أخصائي محتوى رقمي وتواصل مع العملاء — صنعاء، اليمن</p></div><div class="contact-links"><a href="mailto:hafedhalsharafi2@gmail.com">البريد الإلكتروني</a><a href="tel:+967777243690">+967 777 243 690</a><a href="../">المعرض الرئيسي</a></div></div></section>
   </main>
-  <footer class="site-footer"><div class="container footer-layout"><p>© 2026 حافظ الشرفي — المحتوى الرقمي وCanva</p><a href="#top">العودة للأعلى ↑</a></div></footer>
-  <script src="../script.js"></script>
+  <footer>© 2026 حافظ الشرفي — معرض أعمال المحتوى الرقمي والتصميم</footer>
 </body>
 </html>
