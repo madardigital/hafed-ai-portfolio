@@ -1,0 +1,52 @@
+name: Import portfolio assets
+
+on:
+  push:
+    paths:
+      - '.github/workflows/import-portfolio-assets.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  import-assets:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Download sanitized portfolio PDFs
+        shell: bash
+        run: |
+          set -euo pipefail
+          mkdir -p content-customer-service/files/content/festival
+          mkdir -p content-customer-service/files/content/hajj-health
+          mkdir -p content-customer-service/files/content/analysis
+          mkdir -p content-customer-service/files/reports
+          mkdir -p content-customer-service/files/canva
+
+          curl -fL --retry 3 'https://sdmntprnorthcentralus.oaiusercontent.com/files/00000000-63e8-822f-b8e8-65e7f6a13d7e/raw?se=2026-07-31T18:34:43Z&sp=r&sv=2026-02-06&sr=b&scid=eb6b6385-0ab9-5b8b-8886-1606a5753d9f&skoid=fae15675-a81a-44b5-9d8c-d8445a7c26a2&sktid=a48cca56-e6da-484e-a814-9c849652bcb3&skt=2026-07-31T13:17:47Z&ske=2026-08-02T13:17:47Z&sks=b&skv=2026-02-06&sig=3b89lOFIOdylq2mVLeVWyQV63Gn29ywSCB1chmhn4GQ%3D' -o content-customer-service/files/content/festival/content-plan.pdf
+          curl -fL --retry 3 'https://sdmntprnorthcentralus.oaiusercontent.com/files/00000000-6cac-822f-a96f-f32e078a81db/raw?se=2026-07-31T18:34:56Z&sp=r&sv=2026-02-06&sr=b&scid=1e4ecba7-f459-509d-a0e6-c94ec285ec75&skoid=fae15675-a81a-44b5-9d8c-d8445a7c26a2&sktid=a48cca56-e6da-484e-a814-9c849652bcb3&skt=2026-07-30T22:54:18Z&ske=2026-08-01T22:54:18Z&sks=b&skv=2026-02-06&sig=WfMGCTFsxqkbsCv8VQJGOITQ/5%2BRoyK8KjnLKh%2BWoP8%3D' -o content-customer-service/files/content/festival/pr-campaign.pdf
+          curl -fL --retry 3 'https://sdmntprnorthcentralus.oaiusercontent.com/files/00000000-c7a0-822f-9aed-602e37ff8c97/raw?se=2026-07-31T18:35:20Z&sp=r&sv=2026-02-06&sr=b&scid=dd50eff2-2869-5fb6-a747-14c398c16812&skoid=fae15675-a81a-44b5-9d8c-d8445a7c26a2&sktid=a48cca56-e6da-484e-a814-9c849652bcb3&skt=2026-07-31T14:13:09Z&ske=2026-08-02T14:13:09Z&sks=b&skv=2026-02-06&sig=wL3cgc9KBrtSV66S6tmxdTLGk1JXoIz3sHq3V8c63Qw%3D' -o content-customer-service/files/content/festival/digital-performance-analysis.pdf
+          curl -fL --retry 3 'https://sdmntprnorthcentralus.oaiusercontent.com/files/00000000-8e0c-822f-8da7-1b964306fa43/raw?se=2026-07-31T18:35:35Z&sp=r&sv=2026-02-06&sr=b&scid=28cee99b-387e-5bf0-9ab0-e1fb0cbd2560&skoid=fae15675-a81a-44b5-9d8c-d8445a7c26a2&sktid=a48cca56-e6da-484e-a814-9c849652bcb3&skt=2026-07-31T14:13:02Z&ske=2026-08-02T14:13:02Z&sks=b&skv=2026-02-06&sig=6/pmcq7urwURCL3w7UBGfRbg3u5xm/0sP8RSOdF0Ens%3D' -o content-customer-service/files/content/hajj-health/awareness-campaign.pdf
+          curl -fL --retry 3 'https://sdmntprnorthcentralus.oaiusercontent.com/files/00000000-2914-822f-9353-0f8b054c0b1c/raw?se=2026-07-31T18:35:49Z&sp=r&sv=2026-02-06&sr=b&scid=56cbacff-93d0-518f-9a80-d0ea33d4ac06&skoid=fae15675-a81a-44b5-9d8c-d8445a7c26a2&sktid=a48cca56-e6da-484e-a814-9c849652bcb3&skt=2026-07-30T22:13:16Z&ske=2026-08-01T22:13:16Z&sks=b&skv=2026-02-06&sig=yTjTV1KYwBnlQ3oQl5IRbyIx/I6iVBU/Psa6PY1k3H4%3D' -o content-customer-service/files/content/hajj-health/strategic-report.pdf
+          curl -fL --retry 3 'https://sdmntprnorthcentralus.oaiusercontent.com/files/00000000-0860-822f-bbae-eb52a8c77f8e/raw?se=2026-07-31T18:36:07Z&sp=r&sv=2026-02-06&sr=b&scid=51879696-2284-5060-b22d-4f874c26bd15&skoid=fae15675-a81a-44b5-9d8c-d8445a7c26a2&sktid=a48cca56-e6da-484e-a814-9c849652bcb3&skt=2026-07-31T11:58:06Z&ske=2026-08-02T11:58:06Z&sks=b&skv=2026-02-06&sig=NaLF%2B/qN15RsQN48aa3Nw4rlFSEuRY%2B7gAbRcwoYU2Y%3D' -o content-customer-service/files/content/analysis/stc-social-media-analysis.pdf
+          curl -fL --retry 3 'https://sdmntprnorthcentralus.oaiusercontent.com/files/00000000-9458-822f-93eb-3547ddd6480f/raw?se=2026-07-31T18:36:18Z&sp=r&sv=2026-02-06&sr=b&scid=254b89c6-90dd-53d7-990a-b7851609062f&skoid=fae15675-a81a-44b5-9d8c-d8445a7c26a2&sktid=a48cca56-e6da-484e-a814-9c849652bcb3&skt=2026-07-30T22:46:24Z&ske=2026-08-01T22:46:24Z&sks=b&skv=2026-02-06&sig=NlGJnUwTI7X8htRvOecFQoW4H8Upx95yPlNkYgkPH74%3D' -o content-customer-service/files/reports/press-news-indicators.pdf
+          curl -fL --retry 3 'https://sdmntprnorthcentralus.oaiusercontent.com/files/00000000-c2a4-822f-88bd-a49a5232d4fa/raw?se=2026-07-31T18:36:30Z&sp=r&sv=2026-02-06&sr=b&scid=a1d2edff-e0a1-508f-9f96-34a0d034b21e&skoid=fae15675-a81a-44b5-9d8c-d8445a7c26a2&sktid=a48cca56-e6da-484e-a814-9c849652bcb3&skt=2026-07-30T22:56:21Z&ske=2026-08-01T22:56:21Z&sks=b&skv=2026-02-06&sig=zzzxmMn6giVopckOb6knUOGVBS%2BJzbJFwPGLTXtUtXY%3D' -o content-customer-service/files/canva/radiology-development-plan.pdf
+
+          for f in $(find content-customer-service/files -type f -name '*.pdf'); do
+            test -s "$f"
+            head -c 4 "$f" | grep -q '%PDF'
+          done
+
+      - name: Commit imported assets
+        shell: bash
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add content-customer-service/files
+          git commit -m 'Import sanitized portfolio PDF assets'
+          git push
